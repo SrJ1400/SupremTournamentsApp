@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/cardviewLayout"
+    android:layout_width="match_parent"
+    android:layout_height="220dp"
+    android:layout_margin="5dp"
+    android:backgroundTint="@color/cardviewcolor"
+    app:cardCornerRadius="15dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="10dp">
+
+        <ImageView
+            android:id="@+id/imagenTorneo"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            app:srcCompat="@mipmap/ic_launcher" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="168dp"
+            android:layout_gravity="center_vertical"
+            android:layout_margin="10dp"
+            android:layout_weight="1"
+            android:background="@drawable/segundo_border_redondo"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/nombreTorneo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="TextView"
+                android:textColor="@color/secondtextcolor"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/descripcionCorta"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="10dp"
+                android:paddingBottom="5dp"
+                android:text="@string/descripcion_corta"
+                android:textColor="@color/textcolor" />
+
+            <TextView
+                android:id="@+id/nivel"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Nivel"
+                android:textColor="@color/textcolor" />
+
+            <TextView
+                android:id="@+id/fechas"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Fecha Finalizacion"
+                android:textColor="@color/textcolor" />
+
+            <TextView
+                android:id="@+id/gestor"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/nombre_gestor"
+                android:textColor="@color/textcolor" />
+
+        </LinearLayout>
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

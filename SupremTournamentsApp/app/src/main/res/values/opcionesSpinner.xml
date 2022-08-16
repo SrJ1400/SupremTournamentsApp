@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="opcionesGet">
+        <item>Disponibles</item>
+        <item>Fecha Finalización Asc</item>
+        <item>Fecha Finalización Desc</item>
+        <item>Menores y Adultos</item>
+        <item>Adultos</item>
+        <item>Nivel Asc</item>
+        <item>Nivel Desc</item>
+        <item>Nombre Gestor</item>
+        <item>Nivel</item>
+    </string-array>
+</resources>

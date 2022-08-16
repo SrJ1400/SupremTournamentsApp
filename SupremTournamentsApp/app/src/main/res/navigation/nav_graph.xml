@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/principalFragment">
+
+    <fragment
+        android:id="@+id/principalFragment"
+        android:name="srj.proyecto.supremtournamentsapp.PrincipalFragment"
+        android:label="fragment_principal"
+        tools:layout="@layout/fragment_principal" >
+        <action
+            android:id="@+id/PrincipalToInfoTorneo"
+            app:destination="@id/torneoIndividualFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/torneoIndividualFragment"
+        android:name="srj.proyecto.supremtournamentsapp.TorneoIndividualFragment"
+        android:label="fragment_torneo_individual"
+        tools:layout="@layout/fragment_torneo_individual" >
+        <action
+            android:id="@+id/action_torneoIndividualFragment_to_principalFragment"
+            app:destination="@id/principalFragment" />
+    </fragment>
+</navigation>
